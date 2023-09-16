@@ -75,6 +75,7 @@ h1 {
     flex-wrap: wrap;
     padding: 20px;
     top: 90px;
+    overflow-x: hidden;
 }
 
 .container .card {

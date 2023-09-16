@@ -208,28 +208,4 @@ nav ul li a {
     }
 }
 
-@media screen and (min-width:701px) and (max-width:1200px){
-    .container{
-        top:40%;
-        width:500px;
-        height:250px;
-        padding:50px;
-    }
-    .item{
-        background-size: cover;
-        height: 130px;
-        top: -10%
-    }
-    .buttons {
-        bottom:-320px;
-    }
-    .item .name{
-        font-size: 22px;
-        padding-top: 500px;
-    }
-    .item .des{
-        font-size: 13px;
-        margin:-12px 0;
-    }
-}
   

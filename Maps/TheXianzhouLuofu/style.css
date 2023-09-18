@@ -133,7 +133,7 @@ section p{
 .one{
     background-color: rgb(36, 164, 138, 0.1);
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Xianzhou.png);
-    background-size: 150%;
+    background-size: 200% cover;
     background-position: center;
 }
 .one h1{

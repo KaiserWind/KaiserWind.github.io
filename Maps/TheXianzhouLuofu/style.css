@@ -121,8 +121,8 @@ h1{
 }
 
 section p{
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 8  px rgb(255, 255, 255);
+    color: #fff;
+    text-shadow: 1px 1px 8px black;
     font-weight: 1000;
     text-indent: 30px;
     font-size: 22px;

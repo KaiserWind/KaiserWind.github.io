@@ -7,4 +7,13 @@ document.getElementById('prev').onclick = function(){
     document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
 
+
+var audio = $("#audio")[0];
+var image = $("#logo");
+
+image.on("click", function() {
+  audio.play();
+});
+
+
 document.getElementById("myaudio").volume = 0.6

@@ -255,17 +255,30 @@ footer {
         margin-top: -90px;
     }
 
+    .two h1{
+        text-align: center;
+        padding-top: 20px;
+        margin-top: -95px;
+    }
+
     .four h1{
         text-align: center;
         padding-top: 30px;
-        margin-top: -90px;
+        margin-top: -95px;
     }
 
     .five h1{
         text-align: center;
         padding-top: 30px;
-        margin-top: -90px;
+        margin-top: -95px;
     }
+    
+    .six h1{
+        text-align: center;
+        padding-top: 30px;
+        margin-top: -95px;
+    }
+
     footer {
         font-size: 12px;
     }

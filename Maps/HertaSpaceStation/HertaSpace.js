@@ -8,12 +8,12 @@ document.getElementById('prev').onclick = function(){
 }
 
 
-var audio = $("#audio")[0];
-var image = $("#logo");
-
-image.on("click", function() {
-  audio.play();
-});
+var audio = document.getElementById("audio");
+var image = document.getElementById("myImage");
+  
+  image.addEventListener("click", function() {
+    audio.play();
+  });
 
 
 document.getElementById("myaudio").volume = 0.6

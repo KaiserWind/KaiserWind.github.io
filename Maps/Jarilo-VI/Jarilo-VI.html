@@ -21,21 +21,23 @@
             scroll-padding: 45px;
         }
         body {
-            background: #ececec;
+            background: #101820;
             overflow-x: hidden;
         }
         p {
             font-size: 18px;
         }
         h2 {
-            color: #3578E5;
+            color: white;
             text-align: center;
             padding: 8px 12px;
-            border-bottom: 10px solid #3578E5;
-            font-weight: 700;
+            border-bottom: 10px solid #ffff00;
+            font-weight: 600;
         }
+
         .brand-logo {
             font-weight: 600;
+
         }
 
         .banner {
@@ -46,6 +48,9 @@
             max-width: 100%;
         }
 
+        .nav-wrapper ul li a{
+            font-size: 18px;
+        }
         @media screen and (max-width: 700px){
             a#HSR.brand-logo{
                 font-size: 24px;
@@ -54,6 +59,11 @@
                 display: none;
             }
 }
+        @media screen and (max-width: 1300px) {
+            .nav-wrapper ul li a{
+                font-size: 14px;
+            }
+    }
 
 
     </style>
@@ -63,18 +73,18 @@
         <source src="Audio/Embers.mp3">
     </audio>
     <div class="navbar-fixed">
-        <nav class="nav-wrapper blue-grey darken-3">
+        <nav class="nav-wrapper yellow accent-2">
             <div class="container">
-                <a href="/index.html" class="brand-logo" id="HSR">Honkai Star Rail</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                <a href="/index.html" class="brand-logo black-text" id="HSR">Honkai Star Rail</a>
+                <a href="#" class="sidenav-trigger black-text" data-target="mobile-links">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#belobog">Belobog</a></li>
-                    <li><a href="#overworld">The Overworld</a></li>
-                    <li><a href="#underworld">The Underworld</a></li>
-                    <li><a href="#qlipoth">Qlipoth Fort</a></li>
+                    <li><a href="#" class="black-text">Home</a></li>
+                    <li><a href="#belobog" class="black-text">Belobog</a></li>
+                    <li><a href="#overworld" class="black-text">The Overworld</a></li>
+                    <li><a href="#underworld" class="black-text">The Underworld</a></li>
+                    <li><a href="#qlipoth" class="black-text">Qlipoth Fort</a></li>
                 </ul>  
             </div>
         </nav>
@@ -96,18 +106,13 @@
          <div class="row">
             <h2>Areas</h2>
             <div class="col s12 l12">
-                <div class="card z-depth-3">
+                <div class="card z-depth-3 ">
                     <div class="card-image" id="belobog">
                         <img src="img/Belobog.jpeg">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Belobog</span>
                         <p>Nearly a millennium ago, the blistering Everwinter buried the world under snow with the arrival of the Eternal Freeze. Belobog survived the disaster, thanks to the blessings from the Preservation. Despite having to weather the harsh climate, humanity persevered and lived to see the sunrise again.</p>
-                    </div>
-                    <div class="card-action blue accent-4">
-                        <a href="#overworld" class="white-text">The Overworld</a>
-                        <a href="#underworld" class="white-text">The Underworld</a>
-                        <a href="#qlipoth" class="white-text">Qlipoth Fort</a>
                     </div>
                 </div>
             </div>
@@ -120,7 +125,6 @@
                         <span class="card-title">The Overworld</span>
                         <p>The part of Belobog that lies above ground is known as the Overworld, and it is from there that the Architects govern the city. The temperature in the city is constant, and daily life continues as before.</p>
                     </div>
-                    <div class="card-action blue accent-4"></div>
                 </div>
          </div>
          <div class="col s12 l12">
@@ -132,7 +136,6 @@
                     <span class="card-title">The Underworld</span>
                     <p>The part of Belobog that lies underground is known as the Underworld. Relics and architecture from the Old World are buried in between the towering rocky walls. A giant support beam connects the underground to the surface.</p>
                 </div>
-                <div class="card-action blue accent-4"></div>
             </div>
      </div>
      <div class="col s12 l12">
@@ -145,7 +148,6 @@
                 </span>
                 <p>This magnificent fort, named after the Aeon of Preservation, is also the supreme guardian's residence and command center.</p>
             </div>
-            <div class="card-action blue accent-4"></div>
         </div>
  </div>
     </div>

@@ -234,8 +234,7 @@ footer {
         flex-direction: column;
     }
     section p{
-        color: rgb(0, 0, 0);
-        text-shadow: 2px 2px 3px rgb(255, 255, 255);
+        text-shadow: 2px 2px 3px black;
         font-size: 18px;
         position: relative;
         width: 300px;

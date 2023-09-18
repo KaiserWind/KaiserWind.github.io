@@ -132,7 +132,7 @@ section p{
 
 .one{
     background-color: rgb(36, 164, 138, 0.1);
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Xianzhou.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Xianzhou.png);
     background-size: 150%;
     background-position: center;
 }
@@ -146,7 +146,7 @@ section p{
 
 .two{
     background-color: rgb(211, 79, 79);
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Jade\ Gate.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Jade\ Gate.png);
     background-size: 200%;
     background-position: center;
 }
@@ -160,7 +160,7 @@ section p{
 
 .three{
     background-color: rgb(67, 91, 175);
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Starskiff\ Jetty.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Starskiff\ Jetty.png);
     background-size: 200%;
     background-position: center;
 }
@@ -173,7 +173,7 @@ section p{
 }
 .four{
     background-color: rgb(191, 64, 191);
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Starwatcher\ Avenue.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Starwatcher\ Avenue.png);
     background-size: 200%;
     background-position: center;
 }
@@ -187,7 +187,7 @@ section p{
 
 .five{
     background-color: rgb(191, 64, 191);
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Palace\ of\ Astrum.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Palace\ of\ Astrum.png);
     background-size: 200%;
     background-position: center;
 }
@@ -201,7 +201,7 @@ section p{
 
 .six{
     background-color: rgb(191, 64, 191);
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/Cloudford.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Cloudford.png);
     background-size: 200%;
     background-position: center;
 }

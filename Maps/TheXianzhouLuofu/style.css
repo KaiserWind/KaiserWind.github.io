@@ -25,11 +25,13 @@ header {
     overflow-x: hidden;
     border-bottom: 5px solid rgb(206, 138, 36);
     border-top: 5px solid rgb(206, 138, 36);
+text-decoration:none;
 }
 header h1 {
     color: white;
     text-align: center;
     padding: 1px 12px;
+text-decoration:none;
 }
 .navigation {
     top: 2.2%;

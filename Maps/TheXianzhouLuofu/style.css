@@ -240,20 +240,27 @@ footer {
         width: 300px;
     }
     img {
-        width: 370px;
-        height: 320px;
+        width: 350px;
+        height: 230px;
     }
     .one h1{
         text-align: center;
-        padding-top: 40px;
+        padding-top: 30px;
+    }
+
+    .three h1{
+        text-align: center;
+        padding-top: 35px;
     }
 
     .four h1{
         text-align: center;
+        padding-top: 30px;
     }
 
     .five h1{
         text-align: center;
+        padding-top: 30px;
     }
     footer {
         font-size: 12px;

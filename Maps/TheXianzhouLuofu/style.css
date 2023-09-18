@@ -246,21 +246,25 @@ footer {
     .one h1{
         text-align: center;
         padding-top: 20px;
+        margin-top: -90px;
     }
 
     .three h1{
         text-align: center;
         padding-top: 20px;
+        margin-top: -90px;
     }
 
     .four h1{
         text-align: center;
         padding-top: 30px;
+        margin-top: -90px;
     }
 
     .five h1{
         text-align: center;
         padding-top: 30px;
+        margin-top: -90px;
     }
     footer {
         font-size: 12px;

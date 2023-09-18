@@ -83,16 +83,16 @@ nav ul li a {
     box-shadow: none;
 }
 .item:nth-child(3){
-    left:50%;
+    left:65%;
 }
 .item:nth-child(4){
-    left:calc(50% + 220px);
+    left:calc(65% + 220px);
 }
 .item:nth-child(5){
-    left:calc(50% + 440px);
+    left:calc(65% + 440px);
 }
 .item:nth-child(n+6){
-    left:calc(50% + 660px);
+    left:calc(65% + 660px);
     opacity: 0;
 }
 .item .content{
@@ -102,7 +102,7 @@ nav ul li a {
     width:300px;
     text-align: left;
     padding:0;
-    color:#eee;
+    color:#fff;
     transform: translate(0,-50%);
     display: none;
     font-family: system-ui;
@@ -123,7 +123,7 @@ nav ul li a {
     margin:20px 0;
     opacity: 0;
     animation:showcontent 0.7s ease-in-out 0.3s 1 forwards;
-    text-shadow: 5px 2px 4px black;
+    text-shadow: 4px 7px 9px black;
 }
 @keyframes showcontent{
     from{
@@ -143,23 +143,73 @@ nav ul li a {
     text-align: center;
     width:100%;
     left: 0;
+    
 }
 .buttons button{
+    --color: hsl(208, 72%, 39%);
     width:50px;
     height:50px;
-    border-radius: 50%;
+    border: 3px solid --color;
     border:1px solid #555;
     transition: 0.5s;
-}.buttons button:hover{
-    background-color: #bac383;
+    cursor: pointer;
+    text-decoration: none;
+    color:black;
+    isolation: isolate;
+    position: relative;
+    border-radius: 50%;
+    padding: .5em 1em;
+    
+}
+.buttons button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    inset: 0;
+    scale: 0 .1;
+    transition: scale 300ms;
+    border-radius: 50%;
+}
+
+.buttons button:hover::after {
+    scale: 1 1;
+    border-radius: 50%;
+    
+}
+
+.buttons button:hover {
+    color: white;
+}
+
+.buttons button:active::after {
+    background: white;
+}
+
+footer {
+    position: fixed;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    bottom: 0;
+    width: 100%;
 }
 
 @media screen and (max-width:700px){
     .container{
         top:40%;
-        width:500px;
+        width:454px;
         height:250px;
         padding:50px;   
+    }
+
+    .navbar{
+        height: 7%;
+    }
+
+    .navbar img {
+        width: 80px;
     }
 
     html {
@@ -172,26 +222,12 @@ nav ul li a {
         overflow-y: scroll;
         position: relative;
     }
-    .item{
-        background-size: cover;
-        height: 130px;
-        top: -10%
-    }
-    .buttons {
-        bottom:-320px;
-    }
-    .item .name{
-        font-size: 22px;
-        padding-top: 500px;
-    }
-    .item .des{
-        font-size: 13px;
-        margin:-12px 0;
-    }
+
     nav {
         flex: 1;
         text-align: right;
-        margin-right: 2px;
+        margin-right: 5px;
+        z-index: 9999;
     }
     
     nav ul li{
@@ -203,9 +239,101 @@ nav ul li a {
     nav ul li a {
         text-decoration: none;
         color: white;
-        font-size: 16px;
-    }
+        font-size: 14px;
 }
 
+    .item{
+        background-size: cover;
+        height: 130px;
+        top: -10%
+    }
+    .buttons {
+        bottom:-20px;
+    }
+    .item .name{
+        font-size: 22px;
+        padding-top: 570px;
+    }
+    .item .des{
+        font-size: 14px;
+        margin:-12px 0;
+    }
+    .item:nth-child(3){
+        left:50%;
+    }
+    .item:nth-child(4){
+        left:calc(50% + 220px);
+    }
+    .item:nth-child(5){
+        left:calc(50% + 440px);
+    }
+    .item:nth-child(n+6){
+        left:calc(50% + 660px);
+        opacity: 0;
+    }
 
-  
+    footer {
+        font-size: 13px;
+    }   
+}
+
+@media screen and (min-width:701px) and (max-width: 1500px){
+    .container{
+        width:890px;
+        height:520px;
+        padding:50px;   
+    }
+    
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+      
+    body {
+        height: 100%;
+        overflow-y: scroll;
+        position: relative;
+        width: 100%;
+    }
+    .container1 {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/Maps/HertaSpaceStation/img/BG.png);
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .item{
+        background-size: cover;
+        height: 200px;
+        top: -10%
+    }
+    .item .content {
+        width:690px;
+    }
+
+    .buttons {
+        bottom:-20px;
+    }
+    .item .name{
+        font-size: 40px;
+        padding-top: 800px;
+    }
+    .item .des{
+        font-size: 20px;
+        margin:-12px 0;
+    }
+    .item:nth-child(3){
+        left:50%;
+    }
+    .item:nth-child(4){
+        left:calc(50% + 220px);
+    }
+    .item:nth-child(5){
+        left:calc(50% + 440px);
+    }
+    .item:nth-child(n+6){
+        left:calc(50% + 660px);
+        opacity: 0;
+    }
+}

@@ -159,8 +159,18 @@ nav ul li a {
         top:40%;
         width:500px;
         height:250px;
-        padding:50px;
+        padding:50px;   
+    }
 
+    html {
+        overflow: hidden;
+        height: 100%;
+    }
+      
+    body {
+        height: 100%;
+        overflow-y: scroll;
+        position: relative;
     }
     .item{
         background-size: cover;

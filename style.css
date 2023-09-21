@@ -48,7 +48,7 @@ header h1 {
     text-decoration: none;
     margin-left: 20px;
     padding: 6px 15px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .navigation a:hover,
@@ -67,7 +67,7 @@ header h1 {
     z-index: -1;
     transform: scale(0);
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 
@@ -100,16 +100,6 @@ header h1 {
 .parallax img#honkai{
     position: relative;
 }
-
-.parallax img#female{
-    transform: translateX(-210px);
-}
-
-.parallax img#male{
-    transform: translateX(1100px);
-}
-
-
 
 .sec{
     position: relative;

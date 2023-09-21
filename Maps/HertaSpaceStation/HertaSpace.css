@@ -42,6 +42,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    font-weight: 600;
 }
 .container{
     position: absolute;

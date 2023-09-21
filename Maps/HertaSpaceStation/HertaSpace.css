@@ -116,7 +116,7 @@ nav ul li a {
     font-size: 40px;
     font-weight: bold;
     opacity: 0;
-    animation:showcontent 0.7s ease-in-out 1 forwards
+    animation:showcontent 0.7s ease-in-out 1 forwards;
 }
 .item .des{
     padding-top: 15px;

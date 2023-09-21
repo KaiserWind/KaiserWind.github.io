@@ -74,15 +74,16 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    top: 90px;
+    top: 30px;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
-.container .card {
+.container .box {
     position: relative;
     max-width: 310px;
     height: 400px;
-    background:beige;
+    background:#e8deff;
     margin: 20px 10px;
     padding: 20px 15px;
     display: flex;
@@ -93,20 +94,27 @@ h1 {
     border-radius: 8px;
 }
 
-.container .card:hover {
+.container .box:hover {
     height: 750px;
 }
 
-.container .card .imgBx {
+.container .box .imgBx {
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.container .card .imgBx img {
+.container .box .imgBx img {
     max-width: 100%; 
     border-radius: 4px;
+    transition: 0.3s ease-in-out;
 }
 
-.container .card .content{
+.container .box .content{
     position: relative;
     top: -15px;
     margin-top: -140px;
@@ -116,10 +124,9 @@ h1 {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
-
 }
 
-.container .card:hover .content {
+.container .box:hover .content {
     visibility: visible;
     opacity: 1;
     margin: -40px;
@@ -130,7 +137,7 @@ h1 {
     .container {
         top: 160px;
     }
-    .container .card {
+    .container .box {
         max-width: 310px;
     }
     h1 {

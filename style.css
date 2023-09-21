@@ -15,23 +15,13 @@ body{
 
 header{
     position: absolute;
-    top: 20;
-    left: 0;
+    top: 20px;
     width: 100%;
     padding: 30 px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     z-index: 100;
-}
-
-header h1 {
-    color: white;
-    display: inline-block;
-    padding: 4px 15px;
-    font-size: 60px;
-    border: 8px solid white;
-    border-radius: 50px;
 }
 
 .logo {
@@ -103,17 +93,19 @@ header h1 {
 
 .sec{
     position: relative;
-    background: url("img/Splash_Screen_The_Rail_Unto_the_Stars.webp") no-repeat ;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/Splash_Screen_The_Rail_Unto_the_Stars.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 30px 100px;
+    width: 100%;
 }
 
 .sec h2{
     font-size: 3em;
     color: white;
     margin-bottom: 10px;
+    text-shadow: 5px 2px 20px rgb(0, 183, 255);
 }
 
 .sec p{
@@ -123,6 +115,7 @@ header h1 {
     font-weight: 300;
     text-shadow: 3px 5px 6px black;
     text-align: justify;
+    text-shadow: 5px 2px 20px white;
 }
 
 
@@ -159,6 +152,10 @@ footer {
     .sec p{
         max-width: 100%;
         font-size: 1.1em;
+    }
+
+    header {
+        justify-content: center;
     }
 }
    

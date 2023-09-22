@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Honkai Star Rail Characters</title>
     <link rel="stylesheet" href="characters.css".css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <audio autoplay loop id="myaudio" type="audio/mpeg">
@@ -21,12 +22,18 @@
     <div class="container">
         <div class="box">
             <div class="imgBX">
-                <img src="img/mc.png">
+                <img src="img/mc.png" id="mcImg">
             </div>
             <div class="content">
                 <h2>Trailblazer</h2>
                 <p>A boy who boarded the Astral Express. Despite their seemingly synthetic creation, the Trailblazer takes the resemblance of human with silver hair. He chose to travel with the Astral Express to eliminate the dangers posed by the Stellaron. The Trailblazer consistently upholds a composed and impartial demeanor, yet occasionally interjects with remarks of a serious, unrelated, or humorous nature, even in the face of serious situations.</p>
             </div>
+            <div class="buttons">
+                <button id="voiceMC"><i class="fa-solid fa-play"></i></button>
+                <audio type="audio/mpeg" id="MC">
+                    <source src="/Characters/audio/VO_Archive_Caelus_1.ogg">
+                </audio>
+            </div>     
         </div>
         <div class="box">
             <div class="imgBX">
@@ -36,6 +43,12 @@
                 <h2>Himeko</h2>
                 <p>An adventurous scientist who encountered the Astral Express as a young girl when it got stranded in her home world. Years later, Himeko finally repaired the train and began her journey to the stars, but she realized that this was only the beginning. On her trailblazing journey, she would need many more companions. And while they may have different destinations, they all gaze at the same starry sky.</p>
             </div>
+            <div class="buttons">
+                <button id="voiceHime"><i class="fa-solid fa-play"></i></button>
+                <audio type="audio/mpeg" id="Hime">
+                    <source src="/Characters/audio/VO_Archive_Himeko_1.ogg">
+                </audio>
+            </div> 
         </div>
         <div class="box">
             <div class="imgBX">
@@ -45,6 +58,12 @@
                 <h2>Welt</h2>
                 <p>The wise and experienced former Anti-Entropy Sovereign who inherits the name of the world — Welt. He has saved Earth from annihilation time and time again.After the incident with St. Fountain came to a close, Welt had no choice but to venture with the initiator of the incident to the other side of the portal. Perhaps even he did not expect the new journey nor companions that awaited him there.</p>
             </div>
+            <div class="buttons">
+                <button id="voiceWelt"><i class="fa-solid fa-play"></i></button>
+                <audio type="audio/mpeg" id="Welt">
+                    <source src="/Characters/audio/VO_Archive_Welt_1.ogg">
+                </audio>
+            </div> 
         </div>
         <div class="box">
             <div class="imgBX">
@@ -55,6 +74,12 @@
                 <h2>March 7th</h2>
                 <p>A spirited, quirky young girl who is into all the things girls her age should be interested in, for example, taking photos. She was awakened from a piece of drifting eternal ice only to find out that she knows nothing about herself or her past. While initially in low spirits due to her lack of identity, she decided to name herself after the date she came into this new life. And thus, on that day, March 7th was born.</p>
             </div>
+            <div class="buttons">
+                <button id="voiceMarch"><i class="fa-solid fa-play"></i></button>
+                <audio type="audio/mpeg" id="March">
+                    <source src="/Characters/audio/VO_Archive_March_7th_6.ogg">
+                </audio>
+            </div> 
         </div>
         <div class="box">
             <div class="imgBX">
@@ -65,7 +90,14 @@
                 <h2>Dan Heng</h2>
                 <p>A cold and reserved young man who wields a spear known as Cloud-Piercer. He acts as the Express' guard on its long trailblazing expedition. Dan Heng never talks much about his past. In fact, he joined the Express Crew to escape from it. But can the Express really help him outrun his past?</p>
             </div>
+            <div class="buttons">
+                <button id="voiceDan"><i class="fa-solid fa-play"></i></button>
+                <audio type="audio/mpeg" id="Dan">
+                    <source src="/Characters/audio/VO_Archive_Dan_Heng_1.ogg">
+                </audio>
+            </div> 
         </div>
     </div>
+    <script src="characters.js"></script>
 </body>
 </html>

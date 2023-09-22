@@ -15,5 +15,16 @@ var image = document.getElementById("myImage");
     audio.play();
   });
 
+var click = document.getElementById("clicks");
+var button1 = document.getElementById("prev");
+var button2 = document.getElementById("next");
+  button1.addEventListener("click", function() {
+    click.play();
+  });
+  button2.addEventListener("click", function() {
+    click.play();
+  });
+
+
 
 document.getElementById("myaudio").volume = 0.6

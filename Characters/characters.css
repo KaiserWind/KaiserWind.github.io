@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #11182f;
+    overflow: hidden;
 }
 
 h1 {
@@ -23,6 +24,23 @@ h1 {
     z-index: 2;
     top: 5%;  
     text-align: center;  
+}
+
+#btn {
+    left: 40%;
+}
+
+h2 {
+    
+    color: white;
+    padding: 4px 20px;
+    font-size: 1.6em;
+    font-weight: 600;
+    position: absolute;
+    z-index: 2;
+    top: 0%;  
+    left: 83%;
+    text-align: center; 
 }
 
 .buttons{
@@ -74,7 +92,7 @@ h1 {
 }
 
 .navigation {
-    top: 1%;
+    top: 2%;
     position: absolute;
     z-index: 2;
 }
@@ -197,5 +215,11 @@ h1 {
     }
     .navigation {
         top: 12px;
+    }
+    #btn {
+        display: none;
+    }
+    h2 {
+        display: none;
     }
 }

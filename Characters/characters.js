@@ -8,8 +8,29 @@ var voiceHime = document.getElementById("voiceHime");
 var voiceWelt = document.getElementById("voiceWelt");
 var voiceMarch = document.getElementById("voiceMarch");
 var voiceDan = document.getElementById("voiceDan");
+var audio = document.getElementById("myaudio");
+var btn = document.getElementById("btn");
+
+document.addEventListener("DOMContentLoaded", function() {
+  btn.click();
+});
+
+btn.addEventListener("click", function() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
+
+
   voiceMC.addEventListener("click", function() {
-    audio1.play();
+    if (audio1.paused) {
+      audio1.play();
+      audio1.currentTime = 0;
+    } else {
+      audio1.pause();
+    }
     audio2.pause();
     audio3.pause();
     audio4.pause();
@@ -17,7 +38,12 @@ var voiceDan = document.getElementById("voiceDan");
   });
   voiceHime.addEventListener("click", function() {
     audio1.pause();
-    audio2.play();
+    if (audio2.paused) {
+      audio2.play();
+      audio2.currentTime = 0;
+    } else {
+      audio2.pause();
+    }
     audio3.pause();
     audio4.pause();
     audio5.pause();
@@ -25,7 +51,12 @@ var voiceDan = document.getElementById("voiceDan");
   voiceWelt.addEventListener("click", function() {
     audio1.pause();
     audio2.pause();
-    audio3.play();
+    if (audio3.paused) {
+      audio3.play();
+      audio3.currentTime = 0;
+    } else {
+      audio3.pause();
+    }
     audio4.pause();
     audio5.pause();
   });
@@ -33,7 +64,12 @@ var voiceDan = document.getElementById("voiceDan");
     audio1.pause();
     audio2.pause();
     audio3.pause();
-    audio4.play();
+    if (audio4.paused) {
+      audio4.play();
+      audio4.currentTime = 0;
+    } else {
+      audio4.pause();
+    }
     audio5.pause();
   });
   voiceDan.addEventListener("click", function() {
@@ -41,7 +77,12 @@ var voiceDan = document.getElementById("voiceDan");
     audio2.pause();
     audio3.pause();
     audio4.pause();
-    audio5.play();
+    if (audio5.paused) {
+      audio5.play();
+      audio5.currentTime = 0;
+    } else {
+      audio5.pause();
+    }
   });
 
 document.getElementById("myaudio").volume = 0.3

@@ -98,16 +98,17 @@ nav ul li a {
 }
 .item .content{
     position: absolute;
-    top:50%;
-    left:100px;
-    width:300px;
+    top: 50%;
+    left: 100px;
+    width: 300px;
     text-align: left;
-    padding:0;
+    padding: 0;
     color:#fff;
     transform: translate(0,-50%);
     display: none;
-    font-family: system-ui;
+    font-family: "Poppins";
     text-shadow: 5px 2px 4px black;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))
 }
 .item:nth-child(2) .content{
     display: block;

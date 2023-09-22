@@ -44,5 +44,9 @@ var voiceDan = document.getElementById("voiceDan");
     audio5.play();
   });
 
-
-document.getElementById("myaudio").volume = 0.6
+document.getElementById("myaudio").volume = 0.3
+document.getElementById("MC").volume = 0.4
+document.getElementById("Hime").volume = 0.4
+document.getElementById("Welt").volume = 0.4
+document.getElementById("March").volume = 0.4
+document.getElementById("Dan").volume = 0.4

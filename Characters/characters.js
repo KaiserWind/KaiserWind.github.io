@@ -8,19 +8,19 @@ var voiceHime = document.getElementById("voiceHime");
 var voiceWelt = document.getElementById("voiceWelt");
 var voiceMarch = document.getElementById("voiceMarch");
 var voiceDan = document.getElementById("voiceDan");
-var audio = document.getElementById("myaudio");
 var btn = document.getElementById("btn");
+var audio = document.getElementById("myaudio");
 
-document.addEventListener("DOMContentLoaded", function() {
-  btn.click();
-});
 
-btn.addEventListener("click", function() {
-  if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
+window.addEventListener('DOMContentLoaded', function() {
+  audio.play();
+  btn.addEventListener("click", function () {
+      if (audio.paused) {
+          audio.play();
+      } else {
+          audio.pause();
+      }
+  });
 });
 
 

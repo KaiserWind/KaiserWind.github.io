@@ -141,7 +141,7 @@ section p{
 }
 .one h1{
     left: 0;
-    top: 37%;
+    top: 30%;
     color: white;
     padding: 20px;
     font-size: 50px;
@@ -271,7 +271,7 @@ footer {
     .one h1{
         text-align: center;
         padding-top: 20px;
-        margin-top: -90px;
+        margin-top: -50px;
     }
 
     .three h1{

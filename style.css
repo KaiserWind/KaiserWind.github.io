@@ -30,6 +30,11 @@ header{
     user-select: none; 
 }
 
+.navigation {
+    position: absolute;
+    z-index: 999;
+}
+
 .navigation a {
     position:relative;
     font-size: 1.1em;

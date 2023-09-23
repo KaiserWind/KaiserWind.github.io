@@ -26,6 +26,7 @@ header {
     border-bottom: 5px solid rgb(206, 138, 36);
     border-top: 5px solid rgb(206, 138, 36);
     text-decoration:none;
+    box-shadow: 5px 9px 20px white ; 
 }
 header a {
     color: white;
@@ -46,6 +47,7 @@ header a {
     margin-left: 20px;
     padding: 6px 15px;
     transition: .5s;
+    left: 100px;
 }
 
 .navigation a:hover,
@@ -299,15 +301,33 @@ footer {
     footer {
         font-size: 12px;
     }
+    header{
+        height: 90px;
+    }
     header h1{
-        font-size: 20px;
+        font-size: 22px;
+        border-bottom: 3px solid white;
     }
     .vertical-menu{
         display: none;
     }
     .navigation {
-        display: none;
+        top: 45px;
+        display: flex;
+        justify-content: center;
+        left: 28px;
+    }
+    .navigation a {
+        left: 0px;
     }
 }
 
+@media screen and (min-width:701px) and (max-width:1200px){
+    .navigation a {
+        left: 0px;
+    }
+    header a{
+        text-align: right;
 
+    }
+}

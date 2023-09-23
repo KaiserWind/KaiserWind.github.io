@@ -91,11 +91,6 @@ h3 {
     background: white;
 }
 
-.navigation {
-    top: 2%;
-    position: absolute;
-    z-index: 3;
-}
 .navigation a {
     position:relative;
     font-size: 1.1em;
@@ -104,7 +99,7 @@ h3 {
     text-decoration: none;
     margin-left: 20px;
     padding: 6px 15px;
-    transition: .5s;    
+    transition: 0.5s;
 }
 
 .navigation a:hover,
@@ -123,7 +118,7 @@ h3 {
     z-index: -1;
     transform: scale(0);
     opacity: 0;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 
@@ -155,7 +150,7 @@ h3 {
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.5);
     transition: 0.3s ease-in-out;
     overflow: hidden;
     border-radius: 8px;

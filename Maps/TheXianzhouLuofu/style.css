@@ -145,6 +145,7 @@ section p{
     color: white;
     padding: 20px;
     font-size: 50px;
+    text-shadow: 5px 9px 10px black;
 }
 
 .two{
@@ -159,6 +160,7 @@ section p{
     color: white;
     padding: 20px;
     font-size: 50px;
+    text-shadow: 5px 9px 10px black;
 }
 
 .three{
@@ -173,6 +175,7 @@ section p{
     color: white;
     padding: 20px;
     font-size: 50px;
+    text-shadow: 5px 9px 10px black;
 }
 .four{
     background-color: rgb(191, 64, 191);
@@ -186,6 +189,7 @@ section p{
     color: white;
     padding: 20px;
     font-size: 50px;
+    text-shadow: 5px 9px 10px black;
 }
 
 .five{
@@ -200,6 +204,7 @@ section p{
     color: white;
     padding: 20px;
     font-size: 50px;
+    text-shadow: 5px 9px 10px black;
 }
 
 .six{
@@ -215,6 +220,7 @@ section p{
     color: white;
     padding: 20px;
     font-size: 50px;
+    text-shadow: 5px 9px 10px black;
 }
 
 footer {

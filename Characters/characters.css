@@ -94,7 +94,7 @@ h3 {
 .navigation {
     top: 2%;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 .navigation a {
     position:relative;

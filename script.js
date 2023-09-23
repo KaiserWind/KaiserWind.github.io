@@ -20,5 +20,5 @@ if (window.matchMedia("(max-width: 700px)").matches) {
     });
 }
 
-document.getElementById("myaudio").volume = 0.6
+document.getElementById("myaudio").volume = 0.4
 

@@ -58,6 +58,7 @@ h1 {
     transform: scale(0);
     opacity: 0;
     transition: .5s;
+    z-index: -2;
 }
 
 
@@ -222,7 +223,7 @@ h3 {
     #btn {
         display: none;
     }
-    h2 {
+    h3 {
         display: none;
     }
 }

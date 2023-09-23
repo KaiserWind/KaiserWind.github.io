@@ -28,7 +28,7 @@ h1 {
 .navigation {
     top: 2%;
     position: absolute;
-    z-index: 99999;
+    z-index: 999999;
 }
 .navigation a {
     position:relative;
@@ -38,7 +38,8 @@ h1 {
     text-decoration: none;
     margin-left: 20px;
     padding: 6px 15px;
-    transition: .5s;    
+    transition: .5s;  
+    pointer-events: auto;
 }
 
 .navigation a:hover,

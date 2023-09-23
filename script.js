@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-if (window.matchMedia("(max-width: 700px)").matches) {
+if (window.matchMedia("(max-width: 600px)").matches) {
     window.addEventListener('scroll', () => {
         let value = window.scrollY
         if(window.scrollY >= window.innerHeight){

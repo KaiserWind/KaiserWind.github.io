@@ -28,7 +28,7 @@ h1 {
 .navigation {
     top: 2%;
     position: absolute;
-    z-index: 2;
+    z-index: 99999;
 }
 .navigation a {
     position:relative;
@@ -203,9 +203,6 @@ h3 {
 @media screen and (max-width:700px) {
     html {
         overflow-x: hidden;
-    };
-    #btn {
-        left: 30%;
     }
     .container {
         top: 160px;

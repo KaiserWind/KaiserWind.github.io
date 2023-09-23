@@ -54,7 +54,6 @@ h1 {
     height: 100%;
     background: #fff;
     border-radius: 30px;
-    z-index: -1;
     transform: scale(0);
     opacity: 0;
     transition: .5s;

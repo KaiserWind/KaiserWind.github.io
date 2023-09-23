@@ -91,6 +91,12 @@ h3 {
     background: white;
 }
 
+.navigation {
+    top: 2%;
+    position: absolute;
+    z-index: 2;
+}
+
 .navigation a {
     position:relative;
     font-size: 1.1em;

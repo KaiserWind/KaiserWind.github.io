@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #11182f;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -28,7 +29,7 @@ h1 {
 .navigation {
     top: 2%;
     position: absolute;
-    z-index: 99999;
+    z-index: 99999999;
 }
 .navigation a {
     position:relative;
@@ -205,8 +206,11 @@ h3 {
     html {
         overflow-x: hidden;
     }
+    body {
+        overflow-x: unset;
+    }
     .container {
-        top: 160px;
+        top: 160px;  
     }
     .container .box {
         max-width: 310px;
@@ -218,12 +222,16 @@ h3 {
         padding: 1px 10px;
     }
     .navigation {
-        top: 12px;
+        top: 13px;
+        left: 10px;
+        z-index: 999999;
     }
     #btn {
         display: none;
+        visibility: hidden;
     }
     h3 {
         display: none;
+        visibility: hidden;
     }
 }

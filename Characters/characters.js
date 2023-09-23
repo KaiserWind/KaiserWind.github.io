@@ -11,7 +11,6 @@ var voiceDan = document.getElementById("voiceDan");
 var btn = document.getElementById("btn");
 var audio = document.getElementById("myaudio");
 
-
 window.addEventListener('DOMContentLoaded', function() {
   audio.play();
   btn.addEventListener("click", function () {

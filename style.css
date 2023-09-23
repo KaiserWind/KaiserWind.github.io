@@ -194,6 +194,7 @@ footer {
     padding: 10px;
 }
 
+
 @media only screen and (max-width: 600px) {
     .parallax img{
         width: 80%;

@@ -1,4 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    font-size: 16px;
+    font-family: 'Poppins';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+  }
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: lightblue;
+}
 
 * {
     margin: 0;
@@ -9,63 +29,103 @@
 
 body{
     min-height: 100vh;
-    overflow-x: hidden ;
-
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-header{
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 30 px 100px;
+main {
+    margin-left: 5rem;
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 600ms ease;
+    overflow: scroll;
+    z-index: 99999;
+}
+  
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    z-index: 100;
-
-}
-
-.logo {
-    font-size: 2em;
-    color: #fff;
-    user-select: none; 
-}
-
-.navigation a {
-    position:relative;
-    font-size: 1.3em;
-    color: #fff;
-    font-weight: 600;
-    text-decoration: none;
-    margin-left: 20px;
-    padding: 8px 15px;
-    transition: 0.5s;
-}
-
-.navigation a:hover,
-.navigation a.active {
-    color: #333;
-}
-
-.navigation a span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
-    background: #fff;
-    border-radius: 50px;
-    z-index: -1;
-    transform: scale(0);
-    opacity: 0;
-    transition: 0.5s;
 }
-
-
-.navigation a:hover span,
-.navigation a.active span {
-    transform: scale(1);
-    opacity: 1;
+  
+.nav-item {
+    width: 100%;
+}
+  
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+  
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+  
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+  
+.nav-link svg {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+  
+.fa-primary {
+    color: #ffffff;
+}
+  
+.fa-secondary {
+    color: #4b49df;
+}
+  
+.fa-primary,
+.fa-secondary {
+    transition: var(--transition-speed);
+}
+  
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+  
+.logo svg {
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+  
+.logo-text{
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: var(--transition-speed);
+}
+  
+.navbar:hover .logo svg {
+    transform: rotate(-180deg);
 }
 
 .parallax{
@@ -94,7 +154,7 @@ header{
 
 .sec{
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/Splash_Screen_The_Rail_Unto_the_Stars.webp");
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("img/Splash_Screen_The_Rail_Unto_the_Stars.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -110,15 +170,14 @@ header{
 }
 
 .sec p{
-    max-width: 38%;
-    font-size: 1em;
+    max-width: 100%;
+    font-size: 1.6rem;
     color: white;
     font-weight: 300;
     text-shadow: 3px 5px 6px black;
     text-align: justify;
     text-shadow: 5px 2px 20px white;
 }
-
 
 
 body, ul {
@@ -128,39 +187,91 @@ body, ul {
 }
 
 footer {
-
     text-align: center;
     background-color: black;
     font-size: 24px;
     color: white;
     padding: 10px;
-
-}
-.embed {
-    display: none;
 }
 
-@media screen and (min-width: 390px) and (max-width: 1900px){
-    .navigation {
-        font-size: 30px; 
-    }
-    .navigation a {
-        font-size: 1.5em;
-    }
+@media only screen and (max-width: 600px) {
     .parallax img{
-        width: 100%;
+        width: 80%;
+        top: -30px;
+    }
+    .sec h2{
+        font-size: 2.3rem;
     }
     .sec{
-        background: #0f0e1a
+        padding: 30px 30px;
     }
     .sec p{
+        padding: 0;
         max-width: 100%;
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
-
-    header {
-        justify-content: center;
-        padding: 0px 100px;
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+        }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    main {
+      margin: 0;
     }
 }
-   
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 18rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo svg
+    {
+      margin-left: 11rem;
+    }
+  
+    .navbar:hover .logo-text
+    {
+      left: 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .sec{
+        padding: 30px 30px;
+    }
+    .sec h2{
+        font-size: 2.7rem;
+    }
+    .sec p{
+        padding: 0;
+        max-width: 100%;
+        font-size: 1.4em;
+    }
+}

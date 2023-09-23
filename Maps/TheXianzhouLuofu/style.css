@@ -225,6 +225,22 @@ footer {
     width: 100%;
 }
 
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container .one h1,
+.container .one p,
+.container .one img{
+    animation: transitionIn 1.25s;
+}
+
 @media screen and (max-width:700px){
     section {
         height: 100vh;

@@ -28,7 +28,7 @@ h1 {
 .navigation {
     top: 2%;
     position: absolute;
-    z-index: 999999;
+    z-index: 99999;
 }
 .navigation a {
     position:relative;

@@ -27,13 +27,17 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+body::-webkit-scrollbar {
+    width: 0.25rem;
 }
 
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: lightblue;
+}
 main {
     margin-left: 5rem;
 }

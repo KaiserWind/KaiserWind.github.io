@@ -12,7 +12,7 @@
             scroll-padding: 84px;
         }
         body {
-            background: #101820;
+            background: #202833;
             overflow-x: hidden;
         }
 
@@ -26,23 +26,24 @@
         }
 
         body::-webkit-scrollbar-thumb {
-            background: rgb(247, 234, 53);
+            background: #557A95;
         }
 
         p {
             font-size: 18px;
         }
         h2 {
-            color: white;
+            color: #65FCF2;
             text-align: center;
             padding: 8px 12px;
-            border-bottom: 10px solid #ffff00;
+            border-bottom: 10px solid white;
             font-weight: 600;
+            text-shadow: 2px 0px 9px ;
         }
 
-        .brand-logo {
+        .brand-logo{
             font-weight: 600;
-
+            text-shadow:2px 3px 8px rgb(0, 102, 255);
         }
 
         .banner {
@@ -66,6 +67,9 @@
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))
 
         }
+        .nav-wrapper {
+            background: #45A29F;
+        }
         .nav-wrapper ul li a{
             font-size: 18px;
             
@@ -87,12 +91,8 @@
         }
         @media screen and (max-width: 700px){
             a#HSR.brand-logo{
-                font-size: 24px;
-            }
-
-            a.white-text {
-                display: none;
-            }
+                font-size: 25px;
+            }  
 
             .banner p {
                 font-size: 18px;

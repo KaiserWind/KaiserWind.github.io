@@ -3,7 +3,7 @@ var audio2 = document.getElementById("Hime");
 var audio3 = document.getElementById("Welt");
 var audio4 = document.getElementById("March");
 var audio5 = document.getElementById("Dan");
-var voiceMC = document.getElementById("voiceMC");
+  var voiceMC = document.getElementById("voiceMC");
 var voiceHime = document.getElementById("voiceHime");
 var voiceWelt = document.getElementById("voiceWelt");
 var voiceMarch = document.getElementById("voiceMarch");
@@ -84,9 +84,9 @@ window.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-document.getElementById("myaudio").volume = 0.3
-document.getElementById("MC").volume = 0.4
-document.getElementById("Hime").volume = 0.4
-document.getElementById("Welt").volume = 0.4
-document.getElementById("March").volume = 0.4
-document.getElementById("Dan").volume = 0.4
+document.getElementById("myaudio").volume = 0.2
+document.getElementById("MC").volume = 0.7
+document.getElementById("Hime").volume = 0.7
+document.getElementById("Welt").volume = 0.7
+document.getElementById("March").volume = 0.7
+document.getElementById("Dan").volume = 0.7

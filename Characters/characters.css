@@ -73,7 +73,7 @@ h1 {
     opacity: 1;
 }
 
-#btn {
+#btn{
     left: 40%;
 }
 
@@ -127,7 +127,6 @@ h3 {
 .buttons button:hover::after {
     scale: 1 1;
     border-radius: 50%;
-    
 }
 
 .buttons button:hover {
@@ -270,6 +269,6 @@ h1 {
         visibility: hidden;
     }
     .buttons {
-        display: none;
+        display: block;
     }
 }

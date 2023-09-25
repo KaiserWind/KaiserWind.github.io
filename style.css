@@ -48,6 +48,7 @@ main {
     transition: width 600ms ease;
     overflow: hidden;
     z-index: 99999;
+    filter: drop-shadow(3px 3px 7px white);
 }
   
 .navbar-nav {
@@ -70,12 +71,12 @@ main {
     height: 5rem;
     color: var(--text-primary);
     text-decoration: none;
-    filter: grayscale(100%) opacity(0.7);
+    filter: grayscale(100%) opacity(0.7) drop-shadow(1px 1px 3px black);
     transition: var(--transition-speed);
 }
   
 .nav-link:hover {
-    filter: grayscale(0%) opacity(1);
+    filter: grayscale(0%) opacity(1) drop-shadow(1px 1px 5px white);
     background: var(--bg-secondary);
     color: var(--text-secondary);
 }
@@ -150,6 +151,7 @@ main {
     left: 0;
     width: 50%;
     pointer-events: none;
+    filter: drop-shadow(3px 3px 8px white);
 }
 
 .parallax img#honkai{

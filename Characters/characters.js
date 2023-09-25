@@ -16,10 +16,10 @@ window.addEventListener('DOMContentLoaded', function() {
   btn.addEventListener("click", function () {
       if (audio.paused) {
           audio.play();
-          btn.innerHTML = '<i class="fas fa-solid fa-music fa-spin"></i>'
+          btn.innerHTML = '<i class="fa-solid fa-music fa-spin"></i>'
       } else {
           audio.pause();
-          btn.innerHTML = '<i class="fas fa-solid fa-music"></i>'
+          btn.innerHTML = '<i class="fa-solid fa-music"></i>'
       }
   });
 });

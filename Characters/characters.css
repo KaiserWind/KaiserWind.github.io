@@ -75,7 +75,10 @@ h1 {
 
 #btn{
     left: 40%;
-    scale: 1.2;
+}
+
+#btn i {
+    font-size: 20px;
 }
 
 h3 {

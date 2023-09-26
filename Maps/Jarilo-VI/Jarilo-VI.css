@@ -16,7 +16,6 @@
             overflow-x: hidden;
         }
 
-        
         body::-webkit-scrollbar {
             width: 0.25rem;
         }
@@ -72,7 +71,10 @@
         }
         .nav-wrapper ul li a{
             font-size: 18px;
-            
+        }
+
+        a.center.background {
+            background: #45A29F;
         }
 
         @keyframes transitionIn {

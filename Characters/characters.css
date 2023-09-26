@@ -282,5 +282,6 @@ h1 {
     }
     .buttons {
         display: block;
+        left: -130px;
     }
 }

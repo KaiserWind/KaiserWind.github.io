@@ -10,5 +10,8 @@ window.addEventListener('scroll', () => {
 });
 
 
-document.getElementById("myaudio").volume = 0.3
+document.getElementById("myaudio").volume = 0.4
 
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }

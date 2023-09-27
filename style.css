@@ -69,7 +69,7 @@ main {
     min-width: 160px;
     z-index: 1;
     border-radius: 30px;
-    left: -12px;
+    left: 80%;
 }
   
 .dropdown-content a {

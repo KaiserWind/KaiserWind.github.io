@@ -19,16 +19,20 @@
                 <a href="#" class="sidenav-trigger black-text" data-target="mobile-links">
                     <i class="material-icons">menu</i>
                 </a>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#belobog">Belobog</a></li>
+                    <li><a href="#overworld">Overworld</a></li>
+                    <li><a href="#underworld">The Underworld</a></li>
+                    <li><a href="#qlipoth">Qlipoth Fort</a></li>
+                </ul>
+                <a href="#!" class="brand-logo">Honkai Star Rail</a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#" class="white-text">Jarilo-VI</a></li>
-                    <li><a href="#belobog" class="white-text">Belobog</a></li>
-                    <li><a href="#overworld" class="white-text">The Overworld</a></li>
-                    <li><a href="#underworld" class="white-text">The Underworld</a></li>
-                    <li><a href="#qlipoth" class="white-text">Qlipoth Fort</a></li> 
-                    <li><a href="/index.html" class="grey darken-4 white-text">Home</a></li>
-                    <li><a href="/Characters/characters.html" class="grey darken-4 white-text">Characters</a></li>
-                    <li><a href="/Maps/Maps.html" class="grey darken-4 white-text">Maps</a></li>
-                </ul>  
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Characters/characters.html">Characters</a></li>
+                    <li><a href="/Maps/Maps.html">Maps</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Places<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
             </div>
         </nav>
     </div>
@@ -107,6 +111,9 @@
     <script>
         $(document).ready(function(){
             $(".sidenav").sidenav();
+        });
+        $(document).ready(function() {
+            $('.dropdown-trigger').dropdown();
         });
     </script>
 </body>

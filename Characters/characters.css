@@ -408,7 +408,7 @@ h1 {
     }
 }
 
-@media screen and (min-width:701px) and (max-width:1200) {
+@media screen and (min-width:701px) and (max-width:1400px) {
     html {
         overflow-x: hidden;
     }
@@ -423,19 +423,19 @@ h1 {
         margin-top: 0px;
     }
     .container {
-        top: 240px;  
+        top: 200px; 
         margin: 20px 10px;
     }
     .container .box {
         max-width: 310px;
     }
     h1 {
-        top: 7%;
+        top: 10%;
         margin-left: 4px;
         border-top: 8px solid #1bc9e0;
         padding: 1px 10px;
         font-size: 4em;
-        left: -1%; 
+        left: 22%; 
         transform: translate(0%, 0%);
         box-shadow: 9px 9px 20px rgba(85, 125, 255, 0.5);
     }
@@ -455,5 +455,11 @@ h1 {
     .buttons {
         display: block;
         left: -130px;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .container{
+        top: 25px;
     }
 }

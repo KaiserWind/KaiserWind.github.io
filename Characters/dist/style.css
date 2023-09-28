@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/img/astral.webp");
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/Characters/img/astral.webp");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -237,23 +237,23 @@ main a {
 }
 
 .swiper-slide--one {
-  background: linear-gradient(to top, #fcffcd, #20434000, #2c536400), url("/img/mc.png") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #fcffcd, #20434000, #2c536400), url("/Characters/img/mc.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--two {
-  background: linear-gradient(to top, #ffcdcd, #203a4300, #2c536400), url("/img/Hime.png") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #ffcdcd, #203a4300, #2c536400), url("/Characters/img/Hime.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--three {
-  background: linear-gradient(to top, #34575a, #203a4300, #2c536400), url("/img/Wlt.png") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #34575a, #203a4300, #2c536400), url("/Characters/img/Wlt.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--four {
-  background: linear-gradient(to top, #ffcdcd, #203a4300, #2c536400), url("/img/March.png") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #ffcdcd, #203a4300, #2c536400), url("/Characters/img/March.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--five {
-  background: linear-gradient(to top, #cdffd5, #203a4300, #2c536400), url("/img/dan.png") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #cdffd5, #203a4300, #2c536400), url("/Characters/img/dan.png") no-repeat 50% 50%/cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,

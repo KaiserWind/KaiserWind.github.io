@@ -2,7 +2,6 @@
 inspiration
 https://dribbble.com/shots/4684682-Aquatic-Animals
 */
-
 var audioMC = document.getElementById("MC");
 var audioHime = document.getElementById("Hime");
 var audioWelt = document.getElementById("Welt");
@@ -15,6 +14,7 @@ var voiceMarch = document.getElementById("voiceMarch");
 var voiceDan = document.getElementById("voiceDan");
 var btn = document.getElementById("btn");
 var audio = document.getElementById("myaudio");
+
 var swiper = new Swiper(".swiper", {
   effect: "coverflow",
   grabCursor: true,

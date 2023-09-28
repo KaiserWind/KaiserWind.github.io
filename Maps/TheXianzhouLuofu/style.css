@@ -15,7 +15,7 @@ html    {
 header {
     background-color: rgb(8, 8, 8);
     color: white;
-    padding: 4px 0;
+    padding: 0.25rem 0;
     display: inline-block;
     position: fixed;
     width: 100%;
@@ -79,7 +79,7 @@ header a {
 .container {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-    scroll-padding: 0 24px;
+    scroll-padding: 0 1.5rem;
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
@@ -98,7 +98,7 @@ header a {
   
 .vertical-menu a {
     display: block;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     text-decoration: none;
     color: black;
     background: white;
@@ -128,15 +128,20 @@ section p{
     text-shadow: 1px 1px 8px black;
     font-weight: 1000;
     text-indent: 30px;
-    font-size: 22px;
+    font-size: 1.375rem;
     position: relative;
-    width: 700px;
+    width: 43.75rem;
+}
+
+section img {
+    max-height:100% ;
+    width: 50%;
 }
 
 .one{
     background-color: rgb(36, 164, 138, 0.1);
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Xianzhou.png);
-    background-size: 200%;
+    background-size: 120%;
     background-position: center;
 }
 .one h1{
@@ -144,14 +149,15 @@ section p{
     top: 30%;
     color: white;
     padding: 20px;
-    font-size: 50px;
+    font-size: 54px;
     text-shadow: 5px 9px 10px black;
+    margin-top: 70px;
 }
 
 .two{
     background-color: rgb(211, 79, 79);
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Jade\ Gate.png);
-    background-size: 200%;
+    background-size: 120%;
     background-position: center;
 }
 .two h1{
@@ -159,14 +165,15 @@ section p{
     top: 30%;
     color: white;
     padding: 20px;
-    font-size: 50px;
+    font-size: 54px;
     text-shadow: 5px 9px 10px black;
+    margin-top: 70px;
 }
 
 .three{
     background-color: rgb(67, 91, 175);
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Starskiff\ Jetty.png);
-    background-size: 200%;
+    background-size: 120%;
     background-position: center;
 }
 .three h1{
@@ -174,8 +181,9 @@ section p{
     top: 30%;
     color: white;
     padding: 20px;
-    font-size: 50px;
+    font-size: 54px;
     text-shadow: 5px 9px 10px black;
+    margin-top: 70px;
 }
 .four{
     background-color: rgb(191, 64, 191);
@@ -188,14 +196,15 @@ section p{
     top: 30%;
     color: white;
     padding: 20px;
-    font-size: 50px;
+    font-size: 54px;
     text-shadow: 5px 9px 10px black;
+    margin-top: 80px;
 }
 
 .five{
     background-color: rgb(191, 64, 191);
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Palace\ of\ Astrum.png);
-    background-size: 200%;
+    background-size: 120%;
     background-position: center;
 }
 .five h1{
@@ -203,14 +212,15 @@ section p{
     top: 30%;
     color: white;
     padding: 20px;
-    font-size: 50px;
+    font-size: 54px;
     text-shadow: 5px 9px 10px black;
+    margin-top: 70px;
 }
 
 .six{
     background-color: rgb(191, 64, 191);
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/Cloudford.png);
-    background-size: 200%;
+    background-size: 120%;
     background-position: center;
 }
 
@@ -219,8 +229,9 @@ section p{
     top: 30%;
     color: white;
     padding: 20px;
-    font-size: 50px;
+    font-size: 54px;
     text-shadow: 5px 9px 10px black;
+    margin-top: 70px;
 }
 
 footer {
@@ -257,6 +268,8 @@ footer {
         align-items: center;
         scroll-snap-align: start;
         flex-direction: column;
+        background-attachment: fixed;
+        background-size: cover;
     }
     section p{
         text-shadow: 2px 2px 3px black;
@@ -264,44 +277,51 @@ footer {
         position: relative;
         width: 300px;
     }
-    img {
-        width: 350px;
-        height: 230px;
+    section img {
+        max-width: 100%;
+        width: 100%;
+        height: 30%;
     }
     .one h1{
         text-align: center;
         padding-top: 20px;
         margin-top: -20px;
+        font-size: 50px;
     }
 
     .three h1{
         text-align: center;
         padding-top: 20px;
         margin-top: -20px;
+        font-size: 50px;
     }
 
     .two h1{
         text-align: center;
         padding-top: 20px;
         margin-top: -20px;
+        font-size: 50px;
     }
 
     .four h1{
         text-align: center;
         padding-top: 20px;
         margin-top: -20px;
+        font-size: 50px;
     }
 
     .five h1{
         text-align: center;
         padding-top: 20px;
         margin-top: -20px;
+        font-size: 50px;
     }
     
     .six h1{
         text-align: center;
         padding-top: 30px;
         margin-top: -50px;
+        font-size: 50px;
     }
 
     footer {

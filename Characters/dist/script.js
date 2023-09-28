@@ -1,8 +1,13 @@
-var audio1 = document.getElementById("MC");
-var audio2 = document.getElementById("Hime");
-var audio3 = document.getElementById("Welt");
-var audio4 = document.getElementById("March");
-var audio5 = document.getElementById("Dan");
+/*
+inspiration
+https://dribbble.com/shots/4684682-Aquatic-Animals
+*/
+
+var audioMC = document.getElementById("MC");
+var audioHime = document.getElementById("Hime");
+var audioWelt = document.getElementById("Welt");
+var audioMarch = document.getElementById("March");
+var audioDan = document.getElementById("Dan");
 var voiceMC = document.getElementById("voiceMC");
 var voiceHime = document.getElementById("voiceHime");
 var voiceWelt = document.getElementById("voiceWelt");
@@ -10,7 +15,43 @@ var voiceMarch = document.getElementById("voiceMarch");
 var voiceDan = document.getElementById("voiceDan");
 var btn = document.getElementById("btn");
 var audio = document.getElementById("myaudio");
-
+var swiper = new Swiper(".swiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: true
+  },
+  keyboard: {
+    enabled: true
+  },
+  mousewheel: {
+    thresholdDelta: 70
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 1
+    },
+    1024: {
+      slidesPerView: 2
+    },
+    1560: {
+      slidesPerView: 3
+    }
+  }
+});
 window.addEventListener('DOMContentLoaded', function() {
   audio.play();
   btn.addEventListener("click", function () {
@@ -24,19 +65,19 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-audio1.addEventListener("ended", function() {
+audioMC.addEventListener("ended", function() {
   voiceMC.innerHTML = '<i class="fas fa-solid fa-play"></i>'
 });
-audio2.addEventListener("ended", function() {
+audioHime.addEventListener("ended", function() {
   voiceHime.innerHTML = '<i class="fas fa-solid fa-play"></i>'
 });
-audio3.addEventListener("ended", function() {
+audioWelt.addEventListener("ended", function() {
   voiceWelt.innerHTML = '<i class="fas fa-solid fa-play"></i>'
 });
-audio4.addEventListener("ended", function() {
+audioMarch.addEventListener("ended", function() {
   voiceMarch.innerHTML = '<i class="fas fa-solid fa-play"></i>'
 });
-audio5.addEventListener("ended", function() {
+audioDan.addEventListener("ended", function() {
   voiceDan.innerHTML = '<i class="fas fa-solid fa-play"></i>'
 });
 
@@ -47,89 +88,90 @@ audio5.addEventListener("ended", function() {
     voiceHime.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceMarch.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceDan.innerHTML = '<i class="fas fa-solid fa-play"></i>'
-    if (audio1.paused) {
-      audio1.play();
+    if (audioMC.paused) {
+      audioMC.play();
       voiceMC.innerHTML = '<i class="fas fa-solid fa-pause fa-beat-fade"></i>'
-      audio1.currentTime = 0;
+      audioMC.currentTime = 0;
     } else {
-      audio1.pause();
+      audioMC.pause();
       voiceMC.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     }
-    audio2.pause();
-    audio3.pause();
-    audio4.pause();
-    audio5.pause();
+    audioHime.pause();
+    audioWelt.pause();
+    audioMarch.pause();
+    audioDan.pause();
   });
 
   voiceHime.addEventListener("click", function() {
-    audio1.pause();
+    audioMC.pause();
     voiceMC.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceWelt.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceMarch.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceDan.innerHTML = '<i class="fas fa-solid fa-play"></i>'
-    if (audio2.paused) {
-      audio2.play();
+    if (audioHime.paused) {
+      audioHime.play();
       voiceHime.innerHTML = '<i class="fas fa-solid fa-pause fa-beat-fade"></i>'
-      audio2.currentTime = 0;
+      audioHime.currentTime = 0;
     } else {
-      audio2.pause();
+      audioHime.pause();
       voiceHime.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     }
-    audio3.pause();
-    audio4.pause();
-    audio5.pause();
+    audioWelt.pause();
+    audioMarch.pause();
+    audioDan.pause();
   });
+
   voiceWelt.addEventListener("click", function() {
-    audio1.pause();
-    audio2.pause();
+    audioMC.pause();
+    audioHime.pause();
     voiceMC.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceHime.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceMarch.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceDan.innerHTML = '<i class="fas fa-solid fa-play"></i>'
-    if (audio3.paused) {
-      audio3.play();
+    if (audioWelt.paused) {
+      audioWelt.play();
       voiceWelt.innerHTML = '<i class="fas fa-solid fa-pause fa-beat-fade"></i>'
-      audio3.currentTime = 0;
+      audioWelt.currentTime = 0;
     } else {
-      audio3.pause();
+      audioWelt.pause();
       voiceWelt.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     }
-    audio4.pause();
-    audio5.pause();
+    audioMarch.pause();
+    audioDan.pause();
   });
   voiceMarch.addEventListener("click", function() {
-    audio1.pause();
-    audio2.pause();
-    audio3.pause();
+    audioMC.pause();
+    audioHime.pause();
+    audioWelt.pause();
     voiceMC.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceHime.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceWelt.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceDan.innerHTML = '<i class="fas fa-solid fa-play"></i>'
-    if (audio4.paused) {
-      audio4.play();
+    if (audioMarch.paused) {
+      audioMarch.play();
       voiceMarch.innerHTML = '<i class="fas fa-solid fa-pause fa-beat-fade"></i>'
-      audio4.currentTime = 0;
+      audioMarch.currentTime = 0;
     } else {
-      audio4.pause();
+      audioMarch.pause();
       voiceMarch.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     }
-    audio5.pause();
+    audioDan.pause();
   });
   voiceDan.addEventListener("click", function() {
-    audio1.pause();
-    audio2.pause();
-    audio3.pause();
-    audio4.pause();
+    audioMC.pause();
+    audioHime.pause();
+    audioWelt.pause();
+    audioMarch.pause();
     voiceMC.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceHime.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceWelt.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     voiceMarch.innerHTML = '<i class="fas fa-solid fa-play"></i>'
-    if (audio5.paused) {
-      audio5.play();
+    if (audioDan.paused) {
+      audioDan.play();
       voiceDan.innerHTML = '<i class="fas fa-solid fa-pause fa-beat-fade"></i>'
-      audio5.currentTime = 0;
+      audioDan.currentTime = 0;
     } else {
-      audio5.pause();
+      audioDan.pause();
       voiceDan.innerHTML = '<i class="fas fa-solid fa-play"></i>'
     }
   });

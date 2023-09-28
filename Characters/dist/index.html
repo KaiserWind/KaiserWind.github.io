@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Honkai Star Rail - Characters</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="buttons">
+    <button id="btn">
+        <i class='fa-solid fa-music fa-spin'></i></button>
+        <audio loop id="myaudio" type="audio/mpeg">
+            <source src="/audio/Take the Journey.mp3">
+        </audio>
+    </div> 
+<!-- partial:index.partial.html -->
+<main>
+  <div>
+  <nav class="navigation">
+        <a href="/index.html">Home<span></span></a>
+        <a href="/Characters/characters.html" class="active">Characters<span></span></a>
+        <a href="/Maps/Maps.html" >Maps<span></span></a>
+  </nav>
+  <br><br>
+    <h1>the astral express crew</h1>
+    <hr>
+    <p>The Astral Express crew, also known as the Trailblazers, is a group in Honkai: Star Rail which operates from the Astral Express. They follow the Path of The Trailblaze and are considered a subgroup of The Nameless.</p>
+  </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide--one">
+        <div>
+          <h2>TrailBlazer</h2>
+          <p>He is awakened during the opening events of the game by Kafka and Silver Wolf, who leave them to be found by March 7th and Dan Heng.</p>
+          <div class="buttons">
+            <button id="voiceMC"><i class="fa-solid fa-play"></i></button>
+            <audio type="audio/mpeg" id="MC">
+                <source src="/audio/VO_Archive_Caelus_1.ogg">
+            </audio>
+          </div> 
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--two">
+        <div>
+          <h2>Himeko</h2>
+          <p>
+            An adventurous scientist who encountered and repaired a stranded train as a child, she now ventures across the universe.
+          </p>
+        </div>
+        <div class="buttons">
+          <button id="voiceHime"><i class="fa-solid fa-play"></i></button>
+          <audio type="audio/mpeg" id="Hime">
+              <source src="/audio/VO_Archive_Himeko_1.ogg">
+          </audio>
+        </div> 
+      </div>
+
+      <div class="swiper-slide swiper-slide--three">
+        <div>
+          <h2>Welt</h2>
+          <p>
+            Welt is a seasoned member of the Astral Express Crew and the former sovereign of Anti-Entropy who has saved Earth from annihilation time and time again. 
+          </p>
+        </div>
+        <div class="buttons">
+          <button id="voiceWelt"><i class="fa-solid fa-play"></i></button>
+          <audio type="audio/mpeg" id="Welt">
+              <source src="/audio/VO_Archive_Welt_1.ogg">
+          </audio>
+        </div> 
+      </div>
+
+      <div class="swiper-slide swiper-slide--four">
+        <div>
+          <h2>March 7th</h2>
+          <p>
+            An enthusiastic girl who was saved from eternal ice by the Astral Express Crew, and has the unique ability of being able to use "Six-Phased Ice."
+          </p>
+        </div>
+        <div class="buttons">
+          <button id="voiceMarch"><i class="fa-solid fa-play"></i></button>
+          <audio type="audio/mpeg" id="March">
+              <source src="/audio/VO_Archive_March_7th_6.ogg">
+          </audio>
+        </div> 
+      </div>
+
+      <div class="swiper-slide swiper-slide--five">
+        <div>
+          <h2>Dan Heng</h2>
+          <p>
+            The cold and reserved train guard and archivist of the Astral Express. Wielding a spear named Cloud-Piercer.
+          </p>
+        </div>
+        <div class="buttons">
+          <button id="voiceDan"><i class="fa-solid fa-play"></i></button>
+          <audio type="audio/mpeg" id="Dan">
+              <source src="/audio/VO_Archive_Dan_Heng_1.ogg">
+          </audio>
+        </div> 
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'>
+  </script>
+  <script src="/dist/jQuery.js"></script>
+  <script src="/dist/script.js"></script>
+</body>
+</html>

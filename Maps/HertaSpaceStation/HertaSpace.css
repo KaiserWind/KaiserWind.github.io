@@ -50,7 +50,7 @@ nav ul li a {
     top:50%;
     transform: translate(-50%,-50%);
     width:1000px;
-    height:600px;
+    height:610px;
     padding:50px;
     background-color: transparent;
     box-shadow: 0 20px 70px #dbdbdb;
@@ -65,7 +65,7 @@ nav ul li a {
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.5s;
-    background-size: 58vw;
+    background-size: cover;
     position: absolute;
     z-index: 1;
     top:50%;

@@ -18,12 +18,12 @@ body {
 
 header {
     color: white;
-    padding: 13.5px 0;
-    text-align: Center;
+    padding: 0 0;
+    text-align: center;
     position: absolute;
     width: 100%;
     z-index: 1;
-    top: 100;
+    top: 0;
     left: 0;
 }
 
@@ -40,6 +40,7 @@ header h1 {
     top: 2%;
     position: absolute;
     z-index: 2;
+    left: 75%;
 }
 .navigation a {
     position:relative;
@@ -89,7 +90,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 30px;
     background: #060c21;
     transition: 0.5s;
 }
@@ -202,7 +203,7 @@ h1 {
 
 @media screen and (max-width:700px){
     header {
-        top: 40px;
+        top: 50px;
     }
     header h1{
         font-size: 32px;
@@ -210,6 +211,7 @@ h1 {
     }
     .navigation {
         top: 10px;
+        left: 0;
     }
     .box {
         top: 90px;

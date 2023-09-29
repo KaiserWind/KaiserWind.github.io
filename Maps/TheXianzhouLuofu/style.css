@@ -12,6 +12,15 @@ html    {
     overflow-y: auto;
 }
 
+#preloader {
+    background: #000 url(/img/doge-dancing-doge.gif) no-repeat center center;
+    background-size: 35%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+}
+
 header {
     background-color: rgb(8, 8, 8);
     color: white;
@@ -346,6 +355,9 @@ footer {
     .navigation a {
         left: 0px;
     }
+    #preloader {
+        background-size: 100%;
+    }
 }
 @media screen and (min-width:701px) and (max-width:1200px){
     .navigation a {
@@ -354,5 +366,8 @@ footer {
     header a{
         text-align: right;
 
+    }
+    #preloader {
+        background-size: 100%;
     }
 }

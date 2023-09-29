@@ -182,3 +182,9 @@ document.getElementById("Hime").volume = 0.7
 document.getElementById("Welt").volume = 0.7
 document.getElementById("March").volume = 0.7
 document.getElementById("Dan").volume = 0.7
+
+var loader = document.getElementById("preloader");
+
+  window.addEventListener("load", function(){
+    loader.style.display = "none";
+});

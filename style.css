@@ -42,6 +42,15 @@ main {
     margin-left: 5rem;
 }
 
+#preloader {
+    background: #000 url(/img/doge-dancing-doge.gif) no-repeat center center;
+    background-size: 35%;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    position: fixed;
+}
+
 .dropdown {
     position: absolute;
     display: inline-block;
@@ -296,6 +305,9 @@ footer {
         bottom: 135px;
         left: -10px;
     }
+    #preloader {
+        background-size: 100%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -335,5 +347,8 @@ footer {
         padding: 0;
         max-width: 100%;
         font-size: 1.4em;
+    }
+    #preloader {
+        background-size: 100%;
     }
 }

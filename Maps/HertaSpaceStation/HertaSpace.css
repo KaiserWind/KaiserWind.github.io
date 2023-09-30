@@ -328,6 +328,7 @@ footer {
     }
     .item .content {
         width:690px;
+        background: none;
     }
 
     .buttons {

@@ -86,6 +86,10 @@
             background: #45A29F;
         }
 
+        .dropdown-content {
+            top: -64px;
+        }
+
         @keyframes transitionIn {
             from {
                 opacity: 0;
@@ -100,6 +104,14 @@
         .container .banner {
             animation: transitionIn 1s;
         }
+
+        @media screen and (max-width: 390px) {
+            a#HSR.brand-logo.white-text{
+                font-size: 20px;
+            } 
+        }
+
+
         @media screen and (max-width: 700px){
             a#HSR.brand-logo{
                 font-size: 25px;
